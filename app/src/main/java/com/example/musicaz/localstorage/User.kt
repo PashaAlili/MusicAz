@@ -1,4 +1,4 @@
-package com.example.musicaz.Classes
+package com.example.musicaz.localstorage
 
 import android.content.Context
 import android.content.SharedPreferences

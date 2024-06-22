@@ -1,7 +1,5 @@
 package com.example.musicaz.presentation.ui.fragments.login
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.InputType
 import android.text.method.PasswordTransformationMethod
@@ -12,7 +10,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.navigation.fragment.findNavController
-import com.example.musicaz.Classes.User
+import com.example.musicaz.localstorage.User
 import com.example.musicaz.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint

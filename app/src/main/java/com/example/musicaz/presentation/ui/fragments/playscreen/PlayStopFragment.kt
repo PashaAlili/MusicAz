@@ -146,6 +146,10 @@ class PlayStopFragment : Fragment() {
                 binding.playPauseButton.setImageResource(R.drawable.pause)
                 binding.seekBar.max = it.duration / 1000
             }
+            setOnCompletionListener {
+                stop()
+                playNextMusic()
+            }
         }
 
 

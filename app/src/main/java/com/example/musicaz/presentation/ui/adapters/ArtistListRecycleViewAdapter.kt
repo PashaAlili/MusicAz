@@ -6,6 +6,7 @@ import android.widget.AdapterView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import com.bumptech.glide.Glide
+import com.example.musicaz.R
 import com.example.musicaz.core.BaseRecyclerAdapter
 import com.example.musicaz.core.BaseViewHolder
 import com.example.musicaz.databinding.ArtistListBinding
@@ -78,7 +79,10 @@ class ArtistListRecycleViewAdapter : BaseRecyclerAdapter<BaseViewHolder<Artist>>
         BaseViewHolder<Artist>(binding.root){
         override fun bind (artistListItem: Artist) {
             binding.tvArtistName.text = artistListItem.name
-            Glide.with(binding.root.context).load(artistListItem.image).into(binding.ivArtist)
+            Glide.with(binding.root.context)
+                .load(artistListItem.image)
+                .error(R.drawable.spotify)
+                .into(binding.ivArtist)
         }
 
     }

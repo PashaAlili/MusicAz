@@ -3,13 +3,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivArtist"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        app:shapeAppearanceOverlay="@style/RoundedRadius6"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -18,6 +21,10 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:paddingTop="8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:text="Album Title" />
 
 </LinearLayout>

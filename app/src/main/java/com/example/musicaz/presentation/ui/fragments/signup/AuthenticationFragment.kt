@@ -1,14 +1,12 @@
 package com.example.musicaz.presentation.ui.fragments.signup
 
-import android.content.Context
-import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.musicaz.Classes.User
+import com.example.musicaz.localstorage.User
 import com.example.musicaz.R
 import com.example.musicaz.databinding.FragmentAuthenticationBinding
 import dagger.hilt.android.AndroidEntryPoint

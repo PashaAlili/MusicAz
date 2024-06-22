@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.example.musicaz.R.id.artistFragment
+import com.example.musicaz.extensions.setStatusBarColors
 import com.example.musicaz.presentation.ui.fragments.artist.ArtistFragment
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        setStatusBarColors(R.color.backgroundBlack)
 //        var fr = supportFragmentManager.findFragmentById(R.id.artistFragment)
 //
 //        supportFragmentManager.beginTransaction()

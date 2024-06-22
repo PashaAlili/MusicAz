@@ -1,7 +1,6 @@
 package com.example.musicaz.presentation.ui.fragments.artist
 
 import android.os.Bundle
-import android.view.KeyEvent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,8 +12,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView.LayoutManager
-import com.example.musicaz.Classes.User
+import com.example.musicaz.localstorage.User
 import com.example.musicaz.R
 import com.example.musicaz.databinding.FragmentArtistBinding
 import com.example.musicaz.di.Artist
