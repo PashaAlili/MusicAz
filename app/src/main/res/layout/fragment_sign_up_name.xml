@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212">
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create account"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="138dp"
+        android:layout_marginTop="42dp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What’s your name?"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:background="#777777"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxStrokeWidth="1dp"
+        app:boxCornerRadiusTopStart="8dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_input_border"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This appears on your spotify profile"
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvProfileName"
+        android:background="#777777"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTermsOfUse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="By tapping on “Create account”, you agree to the spotify Terms of Use."
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewDivider"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <Button
+        android:id="@+id/btTermsOfUse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTermsOfUse"
+        android:text="Terms of Use"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:textSize="10sp"
+        android:textColor="#1ED760"
+        android:background="@drawable/transparent_button_background"
+        />
+    <WebView
+        android:id="@+id/webViewTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/btTermsOfUse"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To learn more about how Spotify collect, uses, shares and protects your personal data, Please see the Spotify Privacy Policy."
+        android:textSize="10sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btTermsOfUse"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/btPrivacyPolicy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicy"
+        android:text="Prvacy Policy"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="6dp"
+        android:textSize="10sp"
+        android:textColor="#1ED760"
+        android:background="@drawable/transparent_button_background"
+        />
+    <WebView
+        android:id="@+id/webViewPrivacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tvPrivacyPolicy"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tvOffers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please send me news and offers from Spotify."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btPrivacyPolicy"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share my registration data with Spotify’s content providers for\nmarketing purposes."
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvOffers"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/offerGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/btPrivacyPolicy"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="end"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioOffers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:checked="false"
+            />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/purposeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/offerGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="end"
+
+        >
+
+        <RadioButton
+            android:id="@+id/radioPurpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:backgroundTint="@color/white"
+            />
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPurpose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Create an account"
+        android:layout_marginTop="70dp"
+        android:layout_marginHorizontal="100dp"
+        android:backgroundTint="#F5F5F5"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

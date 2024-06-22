@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "686491565223",
+    "project_id": "musicaz-5e070",
+    "storage_bucket": "musicaz-5e070.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686491565223:android:5e129537a9579b01c9ef82",
+        "android_client_info": {
+          "package_name": "com.example.musicaz"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP8NWju3kjuzNRfGvtPG3Egz5lkpchuLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

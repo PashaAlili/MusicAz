@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authenticationFragment">
+
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.signup.AuthenticationFragment"
+        android:label="AuthenticationFragment"
+        tools:layout="@layout/fragment_authentication">
+        <action
+            android:id="@+id/action_authenticationFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_authenticationFragment_to_artistFragment"
+            app:destination="@id/artistFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_signUpNameFragment"
+            app:destination="@id/signUpNameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpNameFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.signup.SignUpNameFragment"
+        android:label="SignUpNameFragment"
+        tools:layout="@layout/fragment_sign_up_name">
+        <action
+            android:id="@+id/action_signUpNameFragment_to_artistFragment"
+            app:destination="@id/artistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.artist.ArtistFragment"
+        android:label="ArtistFragment">
+        <action
+            android:id="@+id/action_artistFragment_to_artistTracksFragment"
+            app:destination="@id/artistTracksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistTracksFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.artist.ArtistTracksFragment"
+        android:label="ArtistTracksFragment">
+        <action
+            android:id="@+id/action_artistTracksFragment_to_playStopFragment"
+            app:destination="@id/playStopFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playStopFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.playscreen.PlayStopFragment"
+        android:label="PlayStopFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.musicaz.presentation.ui.fragments.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_artistFragment"
+            app:destination="@id/artistFragment" />
+    </fragment>
+</navigation>

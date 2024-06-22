@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    >
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+    </ProgressBar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="25dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            app:tint="@color/white"
+            android:background="@color/black"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvSpotify"
+        android:layout_width="246dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="100dp"
+        android:text="Log in to Spotify"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvForLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/etForLogin"
+        app:layout_constraintStart_toStartOf="@id/etForLogin"
+        app:layout_constraintTop_toBottomOf="@id/tvSpotify" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etForLogin"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="7dp"
+        android:background="#777777"
+        android:hint="Email"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvForLogin"
+        tools:ignore="RtlSymmetry" />
+
+
+
+
+    <TextView
+        android:id="@+id/tvForPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/etForPassword"
+        app:layout_constraintStart_toStartOf="@id/etForPassword"
+        app:layout_constraintTop_toBottomOf="@id/etForLogin" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etForPassword"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="7dp"
+        android:background="#777777"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvForPassword"
+        tools:ignore="RtlSymmetry" />
+
+    <CheckBox
+        android:id="@+id/rememberMeCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etForPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        android:text="Remember Me"
+        android:textColor="@color/white"
+        >
+
+    </CheckBox>
+
+
+    <Button
+        android:id="@+id/buttonLogInn"
+        android:layout_width="337dp"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="37dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#777777"
+        android:text="Log in"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rememberMeCheckbox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

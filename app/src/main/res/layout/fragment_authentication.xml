@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/consLayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#121212">
+
+
+    <ImageView
+        android:id="@+id/authenImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/authimage1"
+        android:layout_marginTop="-50dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvSpotify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Millions of Songs. \nFree on Spotify."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authenImage"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/btSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvSpotify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Sign up free"
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="45dp"
+        android:backgroundTint="#1ED760"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btSignUp"
+        android:text="Log in"
+        android:layout_marginHorizontal="120dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/transparent_button_background"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
